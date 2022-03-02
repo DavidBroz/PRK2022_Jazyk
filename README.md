@@ -6,13 +6,19 @@
 
 Příklad Integer:
 1
+
 12345678923132123132131321
+
 0
  
 Příklad nevalidních Integer:
+
 0245232
+
 132l
+
 1235.242
+
 00
 
 ### Fraction 
