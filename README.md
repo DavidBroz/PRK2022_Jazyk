@@ -42,10 +42,9 @@ Libovolná hodnota z množiny {True, true, False, false, Maybe, maybe}
 **Fraction**^**Integer**  
 
 ### Vnořené mocnění 
-**Integer**^@\n
+**Integer**^@  
 
-### Násobení 
-``*`` 
+### Násobení  
 **Integer** * **Integer**  
 **Integer** * **Fraction**  
 **Fraction** * **Integer**  
