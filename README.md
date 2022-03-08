@@ -16,18 +16,19 @@
 ### Fraction 
 
 Uspořádaná dvojice datových typů Integer a Fraction, kde první ve dvojici má význam čitatele a druhý jmenovatele. 
-[**Integer**|**Integer**]\n
-[**Integer**|**Fraction**]\n
-[**Fraction**|**Integer**]\n
-[**Fraction**|**Fraction**]\n
+[**Integer**|**Integer**]  
+[**Integer**|**Fraction**]  
+[**Fraction**|**Integer**]  
+[**Fraction**|**Fraction**]  
 
 
 | Validní  | Nevalidní |
 | ------------- | ------------- |
-| [1`|`1] | [1`|`x]  |
-| [[1`|`2]`|`2]  | [1`|`[`|`1]] |  
-| [0`|`0] |[`|`]|
-| [[8`|`5]`|`[3`|`4]] |[5]|
+| [1\|1] | [1\|x]  |
+| [[1\|2]\|2]  | [1\|[ \|1]] |  
+| [0\|0] |[\|]|
+| [[8\|5]\|[3\|4]] |[5]|
+| [[[8\|5]\|[8\|5]]\|7] |[ ]|
 
 ### Boolean
 Libovolná hodnota z množiny {True, true, False, false, Maybe, maybe}
@@ -35,41 +36,40 @@ Libovolná hodnota z množiny {True, true, False, false, Maybe, maybe}
 ## Operandy
 
 ### Závorky 
-(* *výraz* *) - přednost operací\n
+(* *výraz* *) - přednost operací  
 ### Mocnina 
-**Integer**^**Integer**\n
-**Fraction**^**Integer**\n
+**Integer**^**Integer**  
+**Fraction**^**Integer**  
 
 ### Vnořené mocnění 
 **Integer**^@\n
 
 ### Násobení 
 ``*`` 
-**Integer** * **Integer**\n
-**Integer** * **Fraction**\n
-**Fraction** * **Integer**\n
-**Fraction** * **Fraction**\n
+**Integer** * **Integer**  
+**Integer** * **Fraction**  
+**Fraction** * **Integer**  
+**Fraction** * **Fraction**  
 ### Sčítání 
-**Integer** + **Integer**\n
-**Integer** + **Fraction**\n
-**Fraction** + **Integer**\n
-**Fraction** + **Fraction**\n
+**Integer** + **Integer**  
+**Integer** + **Fraction**  
+**Fraction** + **Integer**  
+**Fraction** + **Fraction**  
 
 ### Porovnání
-**Integer**>**Integer**\n
-**Integer**<**Integer**\n
-**Integer**==**Integer**\n
-**Integer**>**Fraction**\n
-**Integer**<**Fraction**\n
-**Integer**==**Fraction**\n
-**Fraction**>**Fraction**\n
-**Fraction**<**Fraction**\n
-**Fraction**==**Fraction**\n
-**Fraction**>**Integer**\n
-**Fraction**<**Integer**\n
-**Fraction**==**Integer**\n
-**Boolean**==**Boolean**\n
-
+**Integer**>**Integer**  
+**Integer**<**Integer**  
+**Integer**==**Integer**  
+**Integer**>**Fraction**  
+**Integer**<**Fraction**  
+**Integer**==**Fraction**  
+**Fraction**>**Fraction**  
+**Fraction**<**Fraction**  
+**Fraction**==**Fraction**  
+**Fraction**>**Integer**  
+**Fraction**<**Integer**  
+**Fraction**==**Integer**  
+**Boolean**==**Boolean**  
 
 ## Podmíněný skok
 if(**Boolean**){* *výraz* *}
