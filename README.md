@@ -24,10 +24,10 @@ Uspořádaná dvojice datových typů Integer a Fraction, kde první ve dvojici 
 
 | Validní  | Nevalidní |
 | ------------- | ------------- |
-| [1``|``1] | [1``|``x]  |
-| [[1``|``2]``|``2]  | [1``|``[``|``1]] |  
-| [0``|``0] |[``|``]|
-| [[8``|``5]``|``[3``|``4]] |[5]|
+| [1`|`1] | [1`|`x]  |
+| [[1`|`2]`|`2]  | [1`|`[`|`1]] |  
+| [0`|`0] |[`|`]|
+| [[8`|`5]`|`[3`|`4]] |[5]|
 
 ### Boolean
 Libovolná hodnota z množiny {True, true, False, false, Maybe, maybe}
@@ -35,40 +35,40 @@ Libovolná hodnota z množiny {True, true, False, false, Maybe, maybe}
 ## Operandy
 
 ### Závorky 
-() - přednost operací
+(* *výraz* *) - přednost operací\n
 ### Mocnina 
-**Integer**^**Integer**
-**Fraction**^**Integer**
+**Integer**^**Integer**\n
+**Fraction**^**Integer**\n
 
 ### Vnořené mocnění 
-**Integer**^@
+**Integer**^@\n
 
 ### Násobení 
 ``*`` 
-**Integer**``*``**Integer**
-**Integer**``*``**Fraction**
-**Fraction**``*``**Integer**
-**Fraction**``*``**Fraction**
+**Integer** * **Integer**\n
+**Integer** * **Fraction**\n
+**Fraction** * **Integer**\n
+**Fraction** * **Fraction**\n
 ### Sčítání 
-**Integer**``+``**Integer**
-**Integer**``+``**Fraction**
-**Fraction**``+``**Integer**
-**Fraction**``+``**Fraction**
+**Integer** + **Integer**\n
+**Integer** + **Fraction**\n
+**Fraction** + **Integer**\n
+**Fraction** + **Fraction**\n
 
 ### Porovnání
-**Integer**>**Integer**
-**Integer**<**Integer**
-**Integer**==**Integer**
-**Integer**>**Fraction**
-**Integer**<**Fraction**
-**Integer**==**Fraction**
-**Fraction**>**Fraction**
-**Fraction**<**Fraction**
-**Fraction**==**Fraction**
-**Fraction**>**Integer**
-**Fraction**<**Integer**
-**Fraction**==**Integer**
-**Boolean**==**Boolean**
+**Integer**>**Integer**\n
+**Integer**<**Integer**\n
+**Integer**==**Integer**\n
+**Integer**>**Fraction**\n
+**Integer**<**Fraction**\n
+**Integer**==**Fraction**\n
+**Fraction**>**Fraction**\n
+**Fraction**<**Fraction**\n
+**Fraction**==**Fraction**\n
+**Fraction**>**Integer**\n
+**Fraction**<**Integer**\n
+**Fraction**==**Integer**\n
+**Boolean**==**Boolean**\n
 
 
 ## Podmíněný skok
