@@ -1,26 +1,74 @@
-# Definice jazyka
+# Definice jazyka Fň
 ## Datové typy
 ### Integer 
 
-Řetězec čísel zažínající znakem z {1, 2, 3, 4, 5, 6, 7, 8, 9} a pokračující libovolným počtem znaků z {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, nebo znak 0   
+Řetězec čísel zažínající znakem z {1, 2, 3, 4, 5, 6, 7, 8, 9, ?} a pokračující libovolným počtem znaků z {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ?}, nebo znak 0   
 
-Příklad Integer:
-1
-
-12345678923132123132131321
-
-0
- 
-Příklad nevalidních Integer:
-
-0245232
-
-132l
-
-1235.242
-
-00
+| Validní  | Nevalidní |
+| ------------- | ------------- |
+| 1  | 024  |
+| 12345678923132123132131321  | 132x |  
+|0|1.5|
+|1?|1,0|
+|???|00|
+|?0|0?|
 
 ### Fraction 
 
-Uspořádaná dvojice datových typů Integer a Fraction, kde první ve dvojici má význam čitatele a druhý jmenovatele. [(Integer/Fraction)|(Integer/Fraction)] 
+Uspořádaná dvojice datových typů Integer a Fraction, kde první ve dvojici má význam čitatele a druhý jmenovatele. 
+[**Integer**|**Integer**]  
+[**Integer**|**Fraction**]  
+[**Fraction**|**Integer**]  
+[**Fraction**|**Fraction**]  
+
+
+| Validní  | Nevalidní |
+| ------------- | ------------- |
+| [1\|1] | [1\|x]  |
+| [[1\|2]\|2]  | [1\|[ \|1]] |  
+| [0\|0] |[\|]|
+| [[8\|5]\|[3\|4]] |[5]|
+| [[[8\|5]\|[8\|5]]\|7] |[ ]|
+
+### Boolean
+Libovolná hodnota z množiny {True, true, False, false, Maybe, maybe}
+
+## Operandy
+
+### Závorky 
+(* *výraz* *) - přednost operací  
+### Mocnina 
+**Integer**^**Integer**  
+**Fraction**^**Integer**  
+
+### Vnořené mocnění 
+**Integer**^@  
+
+### Násobení  
+**Integer** * **Integer**  
+**Integer** * **Fraction**  
+**Fraction** * **Integer**  
+**Fraction** * **Fraction**  
+### Sčítání 
+**Integer** + **Integer**  
+**Integer** + **Fraction**  
+**Fraction** + **Integer**  
+**Fraction** + **Fraction**  
+
+### Porovnání
+**Integer**>**Integer**  
+**Integer**<**Integer**  
+**Integer**==**Integer**  
+**Integer**>**Fraction**  
+**Integer**<**Fraction**  
+**Integer**==**Fraction**  
+**Fraction**>**Fraction**  
+**Fraction**<**Fraction**  
+**Fraction**==**Fraction**  
+**Fraction**>**Integer**  
+**Fraction**<**Integer**  
+**Fraction**==**Integer**  
+**Boolean**==**Boolean**  
+
+## Podmíněný skok
+if(**Boolean**){* *výraz* *}
