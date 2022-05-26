@@ -72,3 +72,4 @@ Libovolná hodnota z množiny {True, true, False, false, Maybe, maybe}
 
 ## Podmíněný skok
 if(**Boolean**){* *výraz* *}
+I Added This Line With Help Of Gitpod On My Phone
